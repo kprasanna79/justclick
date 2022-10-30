@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flask Auth Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
+	<link rel="stylesheet" href="css/bootstrap_slu.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link href="res/elusive-iconfont/css/elusive-webfont.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/t/bs/jqc-1.12.0,dt-1.10.11/datatables.min.css"/>
+</head>
+
+<body>
+    <section class="hero is-primary is-fullheight">
+	
+	<div class="row visible-sm visible-md visible-lg text-right" style="background-color:#00529B;padding:20px;">
+		<div class="col-sm-9 "><img  class="img-responsive" src="{{url_for('static',filename='SLU_LogoLeftAligned_White_RGB.png')}}"></div>
+		<div id="app_label" class="col-sm-3 text-right" align="center" ><p style="color:Orange;font-size:40px">JustClick - SLU IT Automation Page </p>
+			<!-- <img src="{{url_for('static',filename='mySLU_options-02.png')}}" width="150px;" style="margin-top: 10px;" alt="my slu logo"> -->
+			<p style="color:#aaa;">
+				<input type="hidden" id="urlz" value="ZHhUNmhXTVdWZ1pIT3pWdlRLd1dhMWUwbnJLNmpDQzE2c3hlQkRhSXJOMHdXTEh3dzU5OFdmQXFEczJCSkhiMVkwZz0=">
+				<input type="hidden" id="udp" value="">
+				<input type="hidden" id="ack" value="">
+				<!--<a style="color:#d4d4d4;font-size:13px;font-weight:normal;" href="#" data-toggle="modal" data-target="#myModal"><span class="icon-bullhorn"></span> Announcements</a><br><input type="text" id="searchtext" onfocus="clearform(this)" value="Search mySLU"></p>			-->
+		</div>
+		
+		
+
+	</div>
+
+
+
+
+  
+
+        <div class="hero-body">
+            <div class="container has-text-centered">
+               {% block content %}
+               {% endblock %}
+            </div>
+        </div>
+<div class="container-fluid">
+	<div class="row">
+		<div class='col-xs-12'>
+			<div id="searchresult">
+			</div>
+		</div>
+	</div>
+</div>
+
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title> Header </title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap_slu.css">
+<link rel="stylesheet" href="css/layout.css">
+<link href="res/elusive-iconfont/css/elusive-webfont.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/t/bs/jqc-1.12.0,dt-1.10.11/datatables.min.css"/>
+
+</head>
+<body>
+
+
+	<div class="row visible-sm visible-md visible-lg text-right" style="background-color:#00529B;padding:20px;">
+		<div class="col-sm-9 "><img  class="img-responsive" src="res/images/SLU_LogoLeftAligned_White_RGB.png"></div>
+		<div id="app_label" class="col-sm-3 text-right">
+			<img src="res/images/mySLU_options-02.png" width="150px;" style="margin-top: 10px;" alt="my slu logo">
+			<p style="color:#aaa;">
+				<input type="hidden" id="urlz" value="ZHhUNmhXTVdWZ1pIT3pWdlRLd1dhMWUwbnJLNmpDQzE2c3hlQkRhSXJOMHdXTEh3dzU5OFdmQXFEczJCSkhiMVkwZz0=">
+				<input type="hidden" id="udp" value="">
+				<input type="hidden" id="ack" value=""><br>
+				<a style="color:#d4d4d4;font-size:13px;font-weight:normal;" href="#" data-toggle="modal" data-target="#myModal"><span class="icon-bullhorn"></span> Announcements</a><br><input type="text" id="searchtext" onfocus="clearform(this)" value="Search mySLU"></p>			
+		</div>
+		
+	<nav class="navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+	  <h4 class='visible-xs' style="color:white;margin-left: 20px;margin-right: 5px;"><?php echo TITLE; ?> <input type="text" size="13" id="searchtextxs"  onfocus="clearform(this)" value="Search mySLU" style="color:black;"></h4>
+	  			
+
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+	    		<li class="active">
+			<a href="home" id="navLink_1">Home</a>
+		</li>
+		
+		<li>
+			<a href="tools" id="navLink_3">Tools</a>
+		</li>
+		
+		<li>
+			<a href="sfxwalk_admin" id="navLink_5">SFXWALK Admin</a>
+		</li>
+		<li>
+			<a href="admin" id="navLink_6">Admin</a>
+		</li>
+
+			</ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><i class="icon-lock"></i> Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>	
+
+	</div>
+
+
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class='col-xs-12'>
+			<div id="searchresult">
+			</div>
+		</div>
+	</div>
+</div>
