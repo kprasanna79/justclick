@@ -1,0 +1,25 @@
+.user-listing{padding: 16px 0 0;border-radius: 12px;border: solid 1px #ccc;width: 90%;margin: 25px auto;box-shadow: rgb(0 0 0 / 20%) 0px 1px 4px; background-color:#fff;}
+body .user-listing tr> th{text-transform:uppercase;}
+body .user-listing tr > td,body .user-listing tr> th{padding:8px; line-height:36px;}
+.user-listing .badge{font-weight: 700; min-width:71px !important; font-size:11px;text-transform: uppercase;padding: 5px 10px;min-width: 19px;line-height:1;white-space: nowrap;vertical-align: baseline;border-radius: 4px;}
+.badge.badge-active{color: #fff;background-color: #3ac47d;}
+.badge.badge-inactive{color: #fff;background-color: #d92550;}
+
+.badge.badge-edit,.badge.badge-delete{background-color: #003DA5;min-width:63px !important;}
+.badge.badge-edit a, .badge.badge-delete a{color:#fff;}
+
+body .user-listing tr:hover {background-color: #e0f3ff;}
+
+.user-listing form{width:100%; display:flex;}
+.user-listing .input-group {position: relative;display: flex;align-items:center;margin:0px auto;}
+.user-listing .input-group input[type="text"]{border:solid 1px #999;border-radius:5px 0 0 5px;height: 42px;}
+.user-listing .input-group button{background-color: #3ac47d;border-radius:0 5px 5px 0;height: 42px;color:#fff;text-transform:uppercase;}
+.user-listing .input-group button:hover{background-color: #00286c;}
+
+.user-listing hr{margin-top: 35px;margin-bottom: 25px;}
+@media (max-width: 767px) {
+
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}

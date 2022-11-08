@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% block title %}
+    SFXWALK Page
+{% endblock %}
+
+{% block content %}
+<!-- Search Form HTML Begin -->
+<div id="search-form" class="row">
+	<div class='col-xs-12'>
+		<h2 class="heading-title text-center">Search Form</h2>
+		<div class="input-group col-sm-5 text-center">
+			<form>
+				<input type="search" class="form-control rounded" placeholder="Enter SFXWALK ID.." aria-label="Search"
+		  aria-describedby="search-addon" name="sfxwalkid" id="sfxwalkid" value="" />
+				<input type="hidden" name="sfxwalkaction" id="sfxwalkaction" value="sfxwalksearch">
+				<button type="submit" class="btn btn-outline-primary" id="sfxwalk_search">search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- Search Listings HTML Begin -->
+<div id="search-listing" class="row">
+	<table>
+		<tr>
+			<th>SL No.</th>
+			<th>SFXWALK ID</th>
+			<th>APP ID</th>
+			<th>BANNER ID</th>
+			<th>ENTRY TERM</th>
+			<th>BANNER PIDM</th>
+			<th>SFID</th>
+			<th>OPERATIONS</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>0030L0000rpknuQAA</td>
+			<td>a0B4W000013F4E4UAK</td>
+			<td>001014862</td>
+			<td>202200</td>
+			<td>1018912</td>
+			<td></td>
+			<td><button type="button" name="Delete" value="Delete" class="deleteone">Delete</button></td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>0030L0000rpknuQAA</td>
+			<td>a0B4W000013F4E4UAK</td>
+			<td>001014862</td>
+			<td>202200</td>
+			<td>1018912</td>
+			<td></td>
+			<td><button type="button" name="Delete" value="Delete">Delete</button></td>
+		</tr>
+		<!--tr>
+			<td>3</td>
+			<td>0030L0000rpknuQAA</td>
+			<td>a0B4W000013F4E4UAK</td>
+			<td>001014862</td>
+			<td>202200</td>
+			<td>1018912</td>
+			<td></td>
+			<td><button type="button" name="Delete" value="Delete">Delete</button></td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>0030L0000rpknuQAA</td>
+			<td>a0B4W000013F4E4UAK</td>
+			<td>001014862</td>
+			<td>202200</td>
+			<td>1018912</td>
+			<td></td>
+			<td><button type="button" name="Delete" value="Delete">Delete</button></td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>0030L0000rpknuQAA</td>
+			<td>a0B4W000013F4E4UAK</td>
+			<td>001014862</td>
+			<td>202200</td>
+			<td>1018912</td>
+			<td></td>
+			<td><button type="button" name="Delete" value="Delete">Delete</button></td>
+		</tr-->
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><button type="button" name="Delete All" value="Delete All" id="sfxwalkdeleteall">Delete All</button></td>
+		</tr>
+	</table>
+</div>
+
+{% endblock %}

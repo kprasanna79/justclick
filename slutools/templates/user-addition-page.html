@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block title %}
+    User Register Page
+{% endblock %}
+
+{% block content %}
+<!-- Body HTML Begin -->
+<div id="gac" class="row">
+	<div class='col-xs-12'>
+		<h2 class="heading-title text-center">User Addition Page</h2>
+		<div class="input-group col-sm-12 col-md-6">
+			<form action="#">
+				<div class="col-md-6 col-sm-12 form-row">
+					<label for="sluid">SLUNET ID<sup>*</sup>:</label>
+					<input type="text" class="form-control rounded" aria-label="SLU NET ID" aria-describedby="sluid"/>
+				</div>
+				
+				<div class="col-md-6 col-sm-12 form-row">
+					<label for="password">Password<sup>*</sup>:</label>
+					<input type="password" class="form-control rounded" aria-label="Password" aria-describedby="password"/>
+				</div>
+				
+				<div class="col-md-6 col-sm-12 form-row">
+					<label for="fullname">Full Name<sup>*</sup>:</label>
+					<input type="text" class="form-control rounded" aria-label="Full Name" aria-describedby="fullname"/>
+				</div>
+				
+				<div class="col-md-6 col-sm-12 form-row">
+					<label for="fullname">Email Address<sup>*</sup>:</label>
+					<input type="email" class="form-control rounded" aria-label="Email Address" aria-describedby="email"/>
+				</div>
+				
+				<div class="col-md-6 col-sm-12 form-row">
+					<label for="group">Group<sup>*</sup>:</label>
+					<select id="group" name="group">
+						<option value="group">Group</option>
+						<option value="group1">Group 1</option>
+						<option value="group2">Group 2</option>
+					</select>
+				</div>
+				
+				<div class="col-md-6 col-sm-12 form-row">
+					<label for="state">State<sup>*</sup>:</label>
+					<select id="state" name="state">
+						<option value="active">Active</option>
+						<option value="inactive">Inactive</option>
+					</select>
+				</div>
+				
+				<div class="col-md-12 col-sm-12 form-row text-center user-addition-btn">
+					<input type="submit" value="Create Account">
+				</div>
+
+				
+			</form>
+		</div>
+	</div>
+</div>
+<!-- Body HTML End -->
+{% endblock %}

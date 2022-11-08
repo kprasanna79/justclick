@@ -1,0 +1,35 @@
+#gac .error,#gac .errormessage{display: block;color: red;font-size: 12px;}
+#gac{padding: 16px 0 30px;border-radius: 8px;border: 1px solid rgba(26,54,126,0.125);width: 90%;margin: 25px auto;box-shadow: rgb(0 0 0 / 20%) 0px 1px 2px; background-color:#fff;}
+#gac form{width:100%;}
+#gac form .form-row{margin-bottom:15px; font-size:14px; position:relative;}
+.check-availability{position: absolute;right: -138px;top: 24px;border-radius:3px;border:none;background-color:#00B050; color:#fff; padding:9px 12px;}
+#gac form label{font-size:14px; min-width:175px;}
+#gac .input-group{position: relative;display: flex;align-items:center;margin:0px auto;}
+#gac .input-group input[type="text"],#gac .input-group input[type="email"],#gac .input-group input[type="tel"],#gac .input-group input[type="date"],#gac .input-group input[type="password"],#gac .input-group select{border:solid 1px #999;border-radius:1px;height: 38px;box-shadow:none; background:#fff;}
+#gac .input-group select{width:100%;}
+#gac .input-group input[type="radio"]{width:auto; border:none; height:auto; margin-right: 3px;top: 1px;position: relative;}
+#gac .input-group input[type="submit"]{background-color: #003DA5; padding:0 16px; border:none; border-radius:5px;height: 42px;color:#fff;text-transform:uppercase;}
+#gac .input-group input[type="submit"]:hover{background-color: #00286c;}
+.user-addition-btn{margin-top:10px;} \
+.user-addition-btn input[type="submit"]{min-width:120px;}
+#gac .input-group input:disabled{background: #dddddd;}
+.badge{font-weight: 700; font-size:11px;text-transform: uppercase;padding: 5px 10px;min-width: 19px;line-height:1;white-space: nowrap;vertical-align: baseline;border-radius: 4px;}
+.badge.edit-link{color: #fff;background-color: #ff5a08;}
+.badge.edit-link a{color:#fff;}
+
+.tooltip {position: absolute;display: inline-block;opacity: 1;right: -30px;top: 31px;}
+.tooltip img{width:25px;}
+.tooltip .tooltiptext {visibility: hidden;width: 120px;background-color: #555;color: #fff;text-align: center;border-radius: 6px;padding: 5px 0;position: absolute;z-index: 1;bottom: 125%;left: 50%;margin-left: -60px;opacity: 0;transition: opacity 0.3s;}
+.tooltip .tooltiptext::after {content: "";position: absolute;top: 100%;left: 50%;margin-left: -5px;border-width: 5px;border-style: solid;border-color: #555 transparent transparent transparent;}
+.tooltip:hover .tooltiptext {visibility: visible;opacity: 1;}
+
+@media (max-width: 767px) {
+	#gac{padding:20px 0 30px 0;}
+	#gac .input-group{width: 90%;}
+	.check-availability{margin-top:10px; position:static;}
+	#gac form .form-row{overflow:hidden;}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+	#gac .input-group{width: 75%;}
+	.check-availability{margin-top:10px; position:static; float: left;}
+}

@@ -1,0 +1,20 @@
+#login{padding:15px 0 50px;width:100%;}
+.login-form{background: #fff;border-radius: 20px;padding: 0 30px;margin: 75px auto 0;float: none; display:flex;box-shadow: rgb(0 0 0 / 20%) 0px 1px 2px;}
+.login-form img{margin-top:-55px; margin-bottom:20px;}
+.login-form .input-box{position: relative;display: flex;flex-wrap: wrap;align-items: stretch;width: 100%; margin-bottom:10px;}
+.login-form .input-group-text{display: flex;align-items: center;padding: 6px 14px;font-size: 16px;font-weight: 400;line-height: 24px;color: #212529;text-align: center;white-space: nowrap;background-color: #00529B;border: 1px solid #00529B;border-radius: 0.25rem;}
+.login-form .input-box svg{color:#fff;}
+.login-form .input-box input[type="text"],.login-form .input-box input[type="password"]{position: relative;flex: 1 1 auto;width: 1%;min-width: 0;margin-left: -1px;border-top-left-radius: 0;border-bottom-left-radius: 0; height:44px;}
+.login-form .form-row input[type="submit"]{background-color: #003DA5; padding:0 16px; border:none; border-radius:5px;height: 42px;color:#fff;text-transform:uppercase; margin-top:0px;min-width: 120px;font-size: 15px;position: relative;top: 18px;}
+.login-form .form-row input[type="submit"]:hover{background-color: #00286c;}
+.remember{position:relative; top:2px;}
+.forgot-pass{margin-top:4px;}
+
+
+@media (max-width: 767px) {
+	#login form{width:100%;}
+	.login-form{width: 92%;}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+	.login-form{width:75%;}
+}

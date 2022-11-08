@@ -1,0 +1,33 @@
+#search-form{padding: 16px 0 36px;border-radius: 12px;border: solid 1px #ccc;width: 90%;margin: 25px auto;box-shadow: rgb(0 0 0 / 20%) 0px 1px 4px; background-color:#fff;}
+#search-form form{width:100%; display:flex;}
+#search-form .input-group {position: relative;display: flex;align-items:center;margin:0px auto;}
+#search-form .input-group input[type="search"]{border:solid 1px #999;border-radius:5px 0 0 5px;height: 42px;}
+#search-form .input-group button{background-color: #003DA5;border-radius:0 5px 5px 0;height: 42px;color:#fff;text-transform:uppercase;}
+#search-form .input-group button:hover{background-color: #00286c;}
+
+#search-listing {border-radius:10px;border: solid 1px #ccc;width: 90%;margin:10px auto 50px;box-shadow: rgb(0 0 0 / 20%) 0px 1px 2px;background-color:#fff;}
+#search-listing ul{list-style:none; font-size:14px; margin:0px auto; float:none;}
+#search-listing li{background-color:#fff; line-height: 24px; display:flex; margin-bottom:16px;}
+#search-listing li a{color:#333; display:flex;}
+#search-listing li span.sfx-id{background-color: #003DA5;display:flex;align-items: center;justify-content: center; padding:12px; text-align:center; color:#fff;}
+#search-listing li span.sfx-text{display:flex;justify-content: center; padding:12px;}
+#search-listing li:hover{background-color: #00286c;}
+#search-listing li:hover span{color:#fff;}
+
+#search-listing table{border-collapse: collapse;width: 100%;}
+#search-listing td,#search-listing th {padding:10px;border-bottom:solid 1px #ccc;}
+#search-listing th {background:#f1f1f1; font-size:13px;}
+#search-listing th:first-child{border-radius:10px 0 0 0;}
+#search-listing th:last-child{border-radius:0 10px 0 0;}
+#search-listing tr:last-child td{border-bottom:none;}
+#search-listing button{border-radius:3px;border:none;background-color:#d11a2a; color:#fff; padding:6px 12px;}
+#search-listing button:hover{background-color:#d14a2a;}
+
+@media (max-width: 767px) {
+	#search-form{padding:20px 0 30px 0;}
+	#search-form .input-group{width: 90%;}
+	#search-listing{overflow-y:scroll;}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+	#search-form .input-group{width: 50%;}
+}

@@ -4,6 +4,19 @@ from slutools.models import User
 from flask_login import login_user
 
 
+@app.route('/')
+@app.route('/home')
+def home_page():
+    return render_template('home.html')
+
+@app.route('/sfxwalk_admin')
+def sfxwalk_page():
+    return render_template('sfxwalk.html')
+
+@app.route('/register')
+def register_user_page():
+    return render_template('user-addition-page.html')
+
 @app.route('/profile')
 def profile_page():
     return render_template('profile.html')
