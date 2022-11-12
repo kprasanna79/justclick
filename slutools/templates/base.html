@@ -16,6 +16,7 @@
 	<link href="../static/css/search.css" rel="stylesheet" type="text/css" />
 	<link href="../static/css/common.css" rel="stylesheet" type="text/css" />
 	<link href="../static/css/account-creation.css" rel="stylesheet" type="text/css" />
+	<link href="../static/css/login.css" rel="stylesheet" type="text/css" />
 	<link href="../static/css/home.css" rel="stylesheet" type="text/css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
 <body>
@@ -39,7 +40,7 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
 	    <li class="active">
-			<a href="home" id="navLink_1">Home</a>
+			<a href="{{ url_for('home_page') }}" id="navLink_1">Home</a>
 		</li>
 		
 		<li class="nav-item dropdown">
@@ -55,20 +56,28 @@
       </li>
 		
 		<li>
-			<a href="sfxwalk_admin" id="navLink_5">SFXWALK Admin</a>
+			<a href="{{ url_for('home_page') }}" id="navLink_5">SFXWALK Admin</a>
 		</li>
 		<li>
-			<a href="admin" id="navLink_6">Admin</a>
+			<a href="{{ url_for('register_user_page') }}" id="navLink_6">Admin</a>
 		</li>
 		<li class="help">
 			<a href="help.html" id="navLink_6">Help <span>?</span></a>
 		</li>
 
 			</ul>
+      {% if current_user.is_authenticated %}
       <ul class="nav navbar-nav navbar-right">
 		<li class="icon-lock"><font color="white" align="left">Welcome, {{ current_user.name}}</font></li> &nbsp;
-        <li><a href="#"><i class="icon-lock"></i> Logout</a></li>
+        <li><a href="{{ url_for('logout_page') }}"><i class="icon-lock" ></i> Logout</a></li>
       </ul>
+      {% else %}
+       <ul class="nav navbar-nav navbar-right">
+		<li ><font color="white" align="left">
+            <a href="{{ url_for('login_page') }}">Login </a></font></li> &nbsp;
+        <li><a href="{{ url_for('register_user_page') }}"><i class="icon-lock" ></i> Register</a></li>
+      </ul>
+      {% endif %}
     </div>
   </div>
 </nav>
