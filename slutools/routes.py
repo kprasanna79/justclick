@@ -3,12 +3,19 @@ from flask import render_template, request, redirect, url_for, flash
 from slutools.forms import LoginForm
 from slutools.models import User
 from flask_login import login_user, logout_user, login_required
-
+#from slutools import celery
+import time
+#
+# @celery.task
+# def long_task(self):
+#     time.sleep(5)
+#     print("THis is from celery function\n")
 
 @app.route('/')
 @app.route('/home')
 @login_required
 def home_page():
+    #task=long_task.apply_async()
     return render_template('home.html')
 
 @app.route('/sfxwalk_admin')
