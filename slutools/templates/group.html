@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Group and Listing</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../static/css/bootstrap_slu.css">
+	<link href="../static/css/common.css" rel="stylesheet" type="text/css" />
+	<link href="../static/css/user-listing.css" rel="stylesheet" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="../static/js/sfxwalk.js"></script>
+</head>
+<body>
+	<div class="row visible-sm visible-md visible-lg text-right" style="background-color:#00529B;padding:10px 20px;">
+		<div class="col-sm-3"><img  class="img-responsive logo" src="../static/images/SLU_LogoLeftAligned_White_RGB.png"></div>
+		<div class="col-sm-9 text-center heading-center"><strong>JUST CLICK</strong> - It Automation Portal</div>
+	</div>
+
+
+<nav class="navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+	  <h4 class='visible-xs' style="color:white;margin-left: 20px;margin-right: 5px;"><?php echo TITLE; ?> <input type="text" size="13" id="searchtextxs"  onfocus="clearform(this)" value="Search mySLU" style="color:black;"></h4>
+	  			
+
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+	    <li>
+			<a href="home" id="navLink_1">Home</a>
+		</li>
+		
+		<li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Tool
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="generic-account-creation.html">Generic Account Creation</a></li>
+		  <li><a class="dropdown-item" href="generic-account-creation.html">Generic Account Creation One</a></li>
+		  <li><a class="dropdown-item" href="generic-account-creation.html">Generic Account Creation Two</a></li>
+		  <li><a class="dropdown-item" href="generic-account-creation.html">Generic Account Creation Three</a></li>
+        </ul>
+      </li>
+		
+		<li>
+			<a href="sfxwalk_admin" id="navLink_5">SFXWALK Admin</a>
+		</li>
+		<li class="active">
+			<a href="admin" id="navLink_6">Admin</a>
+		</li>
+
+			</ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><i class="icon-lock"></i> Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Users Listing HTML Begin -->
+<div class="user-listing">
+	<h2 class="heading-title text-center">Add New Group</h2>
+	<div class="input-group col-sm-5 text-center">
+		<form>
+			<input type="text" class="form-control rounded" placeholder="ENTER GROUP NAME.." aria-label="Group"
+	  aria-describedby="Group" value="" />
+			<button type="submit" class="btn btn-outline-primary" id="add">ADD</button>
+		</form>
+	</div>
+	
+	<hr/>
+	
+	<h3 class="heading-title text-center">Group Lists</h3>
+	<div class="main-card mb-3 card">
+		<div class="table-responsive">
+			<table class="align-middle mb-0 table table-borderless table-striped table-hover">
+				<thead>
+				<tr>
+					<th class="text-center">Group</th>
+					<th class="text-center">Action</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td class="text-center">Group Name</td>
+					<td class="text-center">
+						<div class="badge badge-delete"><a href="#">Delete</a></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="text-center">Group Name</td>
+					<td class="text-center">
+						<div class="badge badge-delete"><a href="#">Delete</a></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="text-center">Group Name</td>
+					<td class="text-center">
+						<div class="badge badge-delete"><a href="#">Delete</a></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="text-center">Group Name</td>
+					<td class="text-center">
+						<div class="badge badge-delete"><a href="#">Delete</a></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="text-center">Group Name</td>
+					<td class="text-center">
+						<div class="badge badge-delete"><a href="#">Delete</a></div>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Generic Account Creation</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../static/css/bootstrap_slu.css">
+	<link href="../static/css/common.css" rel="stylesheet" type="text/css" />
+	<link href="../static/css/account-creation.css" rel="stylesheet" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="row visible-sm visible-md visible-lg text-right" style="background-color:#00529B;padding:10px 20px;">
+		<div class="col-sm-3"><img  class="img-responsive logo" src="../static/images/SLU_LogoLeftAligned_White_RGB.png"></div>
+		<div class="col-sm-9 text-center heading-center"><strong>JUST CLICK</strong> - It Automation Portal</div>
+	</div>
+
+<nav class="navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+	  <h4 class='visible-xs' style="color:white;margin-left: 20px;margin-right: 5px;"><?php echo TITLE; ?> <input type="text" size="13" id="searchtextxs"  onfocus="clearform(this)" value="Search mySLU" style="color:black;"></h4>
+	  			
+
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+	    <li>
+			<a href="home" id="navLink_1">Home</a>
+		</li>
+		
+		<li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Tool
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li class="active"><a class="dropdown-item" href="generic-account-creation.html">Generic Account Creation</a></li>
+		  <li><a class="dropdown-item" href="generic-account-creation.html">Generic Account Creation One</a></li>
+		  <li><a class="dropdown-item" href="generic-account-creation.html">Generic Account Creation Two</a></li>
+		  <li><a class="dropdown-item" href="generic-account-creation.html">Generic Account Creation Three</a></li>
+        </ul>
+      </li>
+		
+		<li>
+			<a href="sfxwalk_admin" id="navLink_5">SFXWALK Admin</a>
+		</li>
+		<li>
+			<a href="admin" id="navLink_6">Admin</a>
+		</li>
+
+			</ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><i class="icon-lock"></i> Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Body HTML Begin -->
+<div id="gac" class="row">
+	<div class='col-xs-12'>
+		<h2 class="heading-title text-center">Generic Account Creation</h2>
+		<div class="input-group col-sm-12 col-md-6">
+			<form action="#">
+				<div class="col-md-12 col-sm-12 form-row">
+					<label for="fname">REQUEST NUMBER<sup>*</sup>:</label>
+					<input type="text" class="form-control rounded" aria-label="REQUEST NUMBER" aria-describedby="request-number"/>
+				</div>
+				
+				<div class="col-md-12 col-sm-12 form-row" style="margin-bottom:0;">
+					<label for="lname">Generic:</label>
+				</div>
+				
+				<div class="col-md-12 col-sm-12 form-row">
+					<input type="radio" checked id="email-account" class="form-control rounded" aria-label="Generic" aria-describedby="generic"/> <label for="email-account" style="font-weight:normal;"> &nbsp;Email Account</label>
+				</div>
+				
+				<div class="col-md-12 col-sm-12 form-row">
+					<label for="fname">Generic Account Name<sup>*</sup>:</label>
+					<input type="text" class="form-control rounded" aria-label="Generic Account Name" aria-describedby="generic-account-name"/>
+					<input type="button" value="Check Availability" class="check-availability">
+				</div>
+				
+				<div class="col-md-12 col-sm-12 form-row" style="margin-bottom:0;">
+					<label for="fname">Your Name<sup>*</sup>:</label>
+				</div>
+				
+				<div class="col-md-6 col-sm-12 form-row">
+					<input type="text" class="form-control rounded" aria-label="First Name" placeholder="First Name" aria-describedby="first-name"/>
+				</div>
+				
+				<div class="col-md-6 col-sm-12 form-row">
+					<input type="text" class="form-control rounded" aria-label="Last Name" placeholder="Last Name" aria-describedby="last-name"/>
+				</div>
+				
+				<div class="col-md-12 col-sm-12 form-row">
+					<label for="fname">Expired After<sup>*</sup>:</label>
+					     <input type="date" value="fsd" id="startdateId" class="form-control" required>
+				</div>
+				
+				<div class="col-md-12 col-sm-12 form-row">
+					<label for="fname">Sponsoring <small>(SLUNet or Banner Number)</small><sup>*</sup>:</label>
+					<input type="text" class="form-control rounded" aria-label="Sponsoring" aria-describedby="sponsoring"/>
+				</div>
+				
+				<div class="col-md-12 col-sm-12 form-row">
+					<label for="fname">Comments <small>(300char max)</small>:</label>
+					<textarea class="form-control rounded" aria-label="Comments" aria-describedby="comments"></textarea>
+				</div>
+				
+				<div class="col-md-12 col-sm-12 form-row">
+					<label for="fname">HIPPA <small>(Email Only)</small>:</label>
+					<div class="col-md-12 col-sm-12 form-row" style="margin-bottom:0;">
+						<input type="radio" name="yes_no">Yes</input> &nbsp;&nbsp; <input type="radio" name="yes_no" checked>No</input>
+					</div>
+				</div>
+				
+				<div class="col-md-12 col-sm-12 form-row">
+					<label for="fname">SYSTEM <small>(Email Only)</small>:</label>
+					<input type="text" class="form-control rounded" placeholder="Google" aria-label="System" aria-describedby="system"/>
+					<div class="tooltip"><span><img src="../static/images/tooltip-icon.png"/></span>
+						<span class="tooltiptext">Tooltip text</span>
+					</div>
+				</div>
+				
+				<div class="col-md-12 col-sm-12 form-row">
+					<input type="submit" value="Submit">
+				</div>
+				
+			</form>
+		</div>
+	</div>
+</div>
+<!-- Body HTML End -->
